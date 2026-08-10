@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="image/png" href="img/logos-do-sites.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Times —  FOOTBALL SOCCER</title>
+<meta name="description" content="Perfis detalhados dos principais clubes do futebol mundial: história, títulos, ídolos, elenco atual e estádio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="img/logos-do-sites.png" alt="Logo do site" id="Logo-do-site">
+      <span>
+        <span class="brand__name">FOOTBALL <em>SOCCER</em></span>
+        <span class="brand__tag">Futebol mundial</span>
+      </span>
+    </a>
+    <nav>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav__links">
+        <a href="index.html">Início</a>
+        <a href="ligas.html">Ligas</a>
+        <a href="times.html">Times</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero pitch-bg">
+    <div class="container">
+      <span class="eyebrow">Clubes</span>
+      <h1>Os clubes por trás<br>das grandes ligas</h1>
+      <p>Escudo, estádio, história, títulos, ídolos e a provável escalação de cada equipe. Toque em um card para abrir o perfil completo.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:56px;">
+    <div class="container">
+
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="todas">Todas</button>
+        <button class="filter-btn" data-filter="premier">Premier League</button>
+        <button class="filter-btn" data-filter="laliga">La Liga</button>
+        <button class="filter-btn" data-filter="seriea">Serie A</button>
+        <button class="filter-btn" data-filter="bundesliga">Bundesliga</button>
+        <button class="filter-btn" data-filter="ligue1">Ligue 1</button>
+        <button class="filter-btn" data-filter="brasileirao">Brasileirão</button>
+      </div>
+
+      <div class="form-field reveal" style="max-width:360px;margin-bottom:26px;">
+        <label for="team-search">Buscar clube</label>
+        <input type="text" id="team-search" placeholder="Ex.: Flamengo, Bayern, Milan...">
+      </div>
+
+      <p class="eyebrow reveal" style="margin-bottom:10px;">116 clubes catalogados — técnico e elenco na posição mais recente conhecida, sujeitos a mudanças ao longo da temporada.</p>
+      <p id="no-results" class="reveal" style="display:none;color:var(--chalk-dim);">Nenhum clube encontrado com esse termo.</p>
+
+      <div class="grid grid--2" style="gap:20px;" id="teams-grid">
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" fill="#0A1128" stroke="#E8B33D" stroke-width="2"/>
+            <text x="24" y="29" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="14" fill="#E8B33D">XI</text>
+          </svg>
+          <span class="brand__name">ARENA <em>XI</em></span>
+        </div>
+        <p>Seu ponto de encontro para ligas, clubes e histórias do futebol mundial.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="ligas.html">Ligas</a></li>
+          <li><a href="times.html">Times</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ligas</h4>
+        <ul>
+          <li><a href="ligas.html#premier-league">Premier League</a></li>
+          <li><a href="ligas.html#laliga">La Liga</a></li>
+          <li><a href="ligas.html#brasileirao">Brasileirão</a></li>
+          <li><a href="ligas.html#champions">Champions League</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes sociais</h4>
+        <div class="social">
+          <a href="contato.html" aria-label="Instagram">IG</a>
+          <a href="contato.html" aria-label="X / Twitter">X</a>
+          <a href="contato.html" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026  FOOTBALL SOCCER. Projeto demonstrativo — dados de fãs, para fãs.</span>
+      <span>Feito para desktop, tablet e celular.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/crest-fallback.js"></script>
+<script src="js/teams-data.js"></script>
+<script src="js/teams-render.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

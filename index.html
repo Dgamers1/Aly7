@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" type="image/png" href="img/logos-do-sites.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOOTBALL SOCCER — O mapa do futebol mundial</title>
+<meta name="description" content="ARENA XI reúne as principais ligas, clubes e histórias do futebol mundial em um só lugar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>⚽ PREMIER LEAGUE</span>Manchester City x Liverpool — sábado, 17h30
+    <span>⚽ LA LIGA</span>Real Madrid x Barcelona — El Clásico neste fim de semana
+    <span>⚽ BRASILEIRÃO</span>Flamengo x Palmeiras — decisão na Série A
+    <span>⚽ CHAMPIONS LEAGUE</span>Fase de grupos define os classificados
+    <span>⚽ SERIE A</span>Juventus x Inter de Milão — Derby d'Italia
+    <span>⚽ BUNDESLIGA</span>Bayern de Munique segue líder isolado
+    <!-- duplicado para loop contínuo -->
+    <span>⚽ PREMIER LEAGUE</span>Manchester City x Liverpool — sábado, 17h30
+    <span>⚽ LA LIGA</span>Real Madrid x Barcelona — El Clásico neste fim de semana
+    <span>⚽ BRASILEIRÃO</span>Flamengo x Palmeiras — decisão na Série A
+    <span>⚽ CHAMPIONS LEAGUE</span>Fase de grupos define os classificados
+    <span>⚽ SERIE A</span>Juventus x Inter de Milão — Derby d'Italia
+    <span>⚽ BUNDESLIGA</span>Bayern de Munique segue líder isolado
+  </div>
+</div>
+
+<header class="site">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="img/logos-do-sites.png" alt="Logo do site" id="Logo-do-site">
+      <span>
+        <span class="brand__name">FOOTBALL <em>SOCCER</em></span>
+        <span class="brand__tag">Futebol mundial</span>
+      </span>
+    </a>
+    <nav>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav__links">
+        <a href="index.html">Início</a>
+        <a href="ligas.html">Ligas</a>
+        <a href="times.html">Times</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero pitch-bg">
+    <div class="container hero__grid">
+      <div class="reveal in">
+        <span class="eyebrow">Temporada 2025/26</span>
+        <h1>O mundo da bola<br>em <span class="stroke">um só lugar</span>.</h1>
+        <p class="hero__lede">Ligas, clubes, escudos, estádios e escalações das principais competições do planeta — organizado como um verdadeiro caderno de scouting, do Brasileirão à Champions League.</p>
+        <div class="hero__cta">
+          <a href="ligas.html" class="btn btn--gold">Explorar ligas</a>
+          <a href="times.html" class="btn btn--ghost">Ver os clubes</a>
+        </div>
+        <div class="hero__stats">
+          <div><b>7</b><span>Competições</span></div>
+          <div><b>116</b><span>Clubes catalogados</span></div>
+          <div><b>6</b><span>Países cobertos</span></div>
+        </div>
+      </div>
+      <div class="pitch-graphic reveal in">
+        <div class="ball">
+          <svg viewBox="0 0 64 64" width="64" height="64">
+            <polygon points="32,14 40,20 37,29 27,29 24,20" fill="#1a1a1a"/>
+            <polygon points="14,30 22,26 27,29 24,38 16,39" fill="#1a1a1a" opacity=".85"/>
+            <polygon points="50,30 42,26 37,29 40,38 48,39" fill="#1a1a1a" opacity=".85"/>
+            <polygon points="32,50 24,44 27,36 37,36 40,44" fill="#1a1a1a" opacity=".85"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APRESENTAÇÃO -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Sobre a Arena</span>
+          <h2>Feito para quem vive o jogo entre uma partida e outra.</h2>
+        </div>
+        <p>O FOOTBALL SOCCER nasceu para organizar o que hoje está espalhado: tabelas, escudos, história dos clubes e escalações. Tudo com a estética de um estádio nos minutos que antecedem o apito inicial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGAS EM DESTAQUE -->
+  <section class="pitch-bg">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Competições</span>
+          <h2>Principais ligas do futebol mundial</h2>
+        </div>
+        <a href="ligas.html" class="btn btn--ghost btn--sm">Ver todas as ligas →</a>
+      </div>
+
+      <div class="grid grid--4">
+
+        <a class="card reveal" href="ligas.html#premier-league">
+          <div class="card__badge">
+            <svg width="30" height="30" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#E8B33D" stroke-width="1.5"/><path d="M12 3v18M3 12h18" stroke="#E8B33D" stroke-width="1"/></svg>
+          </div>
+          <span class="meta">Inglaterra</span>
+          <h3>Premier League</h3>
+          <p>A liga mais assistida do planeta, marcada por ritmo intenso e estádios lotados.</p>
+          <span class="card__link">Ver clubes</span>
+        </a>
+
+        <a class="card reveal" href="ligas.html#laliga">
+          <div class="card__badge">
+            <svg width="30" height="30" viewBox="0 0 24 24"><path d="M12 2 L22 8 L18 20 L6 20 L2 8 Z" fill="none" stroke="#E8B33D" stroke-width="1.5"/></svg>
+          </div>
+          <span class="meta">Espanha</span>
+          <h3>La Liga</h3>
+          <p>Berço do El Clásico, com tradição técnica e alguns dos maiores clubes da história.</p>
+          <span class="card__link">Ver clubes</span>
+        </a>
+
+        <a class="card reveal" href="ligas.html#seriea">
+          <div class="card__badge">
+            <svg width="30" height="30" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="#E8B33D" stroke-width="1.5"/></svg>
+          </div>
+          <span class="meta">Itália</span>
+          <h3>Serie A</h3>
+          <p>O berço do "catenaccio" e de rivalidades históricas como o Derby d'Italia.</p>
+          <span class="card__link">Ver clubes</span>
+        </a>
+
+        <a class="card reveal" href="ligas.html#bundesliga">
+          <div class="card__badge">
+            <svg width="30" height="30" viewBox="0 0 24 24"><polygon points="12,3 21,9 21,15 12,21 3,15 3,9" fill="none" stroke="#E8B33D" stroke-width="1.5"/></svg>
+          </div>
+          <span class="meta">Alemanha</span>
+          <h3>Bundesliga</h3>
+          <p>Estádios sempre cheios e um dos futebóis mais organizados taticamente do mundo.</p>
+          <span class="card__link">Ver clubes</span>
+        </a>
+
+        <a class="card reveal" href="ligas.html#ligue1">
+          <div class="card__badge">
+            <svg width="30" height="30" viewBox="0 0 24 24"><path d="M12 2 L14 9 L21 9 L15.5 13 L17.5 20 L12 16 L6.5 20 L8.5 13 L3 9 L10 9 Z" fill="none" stroke="#E8B33D" stroke-width="1.3"/></svg>
+          </div>
+          <span class="meta">França</span>
+          <h3>Ligue 1</h3>
+          <p>Vitrine para joias do futebol mundial, com o PSG como principal força.</p>
+          <span class="card__link">Ver clubes</span>
+        </a>
+
+        <a class="card reveal" href="ligas.html#brasileirao">
+          <div class="card__badge">
+            <svg width="30" height="30" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#E8B33D" stroke-width="1.5"/><path d="M4 12h16M12 4v16" stroke="#E8B33D" stroke-width="1"/></svg>
+          </div>
+          <span class="meta">Brasil</span>
+          <h3>Brasileirão Série A</h3>
+          <p>A liga mais competitiva das Américas, com a maior torcida do mundo por trás dela.</p>
+          <span class="card__link">Ver clubes</span>
+        </a>
+
+        <a class="card reveal" href="ligas.html#champions">
+          <div class="card__badge">
+            <svg width="30" height="30" viewBox="0 0 24 24"><path d="M6 3h12v6a6 6 0 0 1-12 0V3Z" fill="none" stroke="#E8B33D" stroke-width="1.4"/><path d="M9 20h6M12 15v5" stroke="#E8B33D" stroke-width="1.4"/></svg>
+          </div>
+          <span class="meta">Europa</span>
+          <h3>UEFA Champions League</h3>
+          <p>A competição de clubes mais cobiçada do mundo — a "orelhuda" define o melhor da Europa.</p>
+          <span class="card__link">Ver clubes</span>
+        </a>
+
+        <div class="card reveal" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:linear-gradient(160deg,var(--pitch-2),var(--pitch));">
+          <h3>+ 7ª competição</h3>
+          <p>Novas ligas e copas continentais chegam em breve na ARENA XI.</p>
+          <a href="ligas.html" class="card__link">Acompanhar</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMES EM DESTAQUE -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Clubes</span>
+          <h2>Equipes em destaque</h2>
+        </div>
+        <a href="times.html" class="btn btn--ghost btn--sm">Ver todos os clubes →</a>
+      </div>
+
+      <div class="grid grid--4">
+        <a class="card reveal" href="times.html#real-madrid">
+          <div class="card__badge" style="border-color:#FEBE10;"><img src="assets/crests/real-madrid.png" alt="Escudo Real Madrid" data-crest-fallback data-crest-color="#FEBE10"></div>
+          <span class="meta">La Liga · Espanha</span>
+          <h3>Real Madrid</h3>
+          <p>O clube com mais títulos europeus da história.</p>
+          <span class="card__link">Ver perfil</span>
+        </a>
+        <a class="card reveal" href="times.html#man-city">
+          <div class="card__badge" style="border-color:#6CABDD;"><img src="assets/crests/man-city.png" alt="Escudo Manchester City" data-crest-fallback data-crest-color="#6CABDD"></div>
+          <span class="meta">Premier League · Inglaterra</span>
+          <h3>Manchester City</h3>
+          <p>Potência tática comandada com identidade própria de jogo.</p>
+          <span class="card__link">Ver perfil</span>
+        </a>
+        <a class="card reveal" href="times.html#flamengo">
+          <div class="card__badge" style="border-color:#C1272D;"><img src="assets/crests/flamengo.png" alt="Escudo Flamengo" data-crest-fallback data-crest-color="#C1272D"></div>
+          <span class="meta">Brasileirão · Brasil</span>
+          <h3>Flamengo</h3>
+          <p>A maior torcida do Brasil, com o Maracanã como palco de festa.</p>
+          <span class="card__link">Ver perfil</span>
+        </a>
+        <a class="card reveal" href="times.html#bayern">
+          <div class="card__badge" style="border-color:#DC052D;"><img src="assets/crests/bayern.png" alt="Escudo Bayern de Munique" data-crest-fallback data-crest-color="#DC052D"></div>
+          <span class="meta">Bundesliga · Alemanha</span>
+          <h3>Bayern de Munique</h3>
+          <p>Dominante na Alemanha e presença constante na elite europeia.</p>
+          <span class="card__link">Ver perfil</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÍDEO -->
+  <section class="pitch-bg">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Assista</span>
+          <h2>O hino que arrepia antes da bola rolar</h2>
+        </div>
+        <p>O hino oficial da UEFA Champions League, tocado em todos os estádios antes das partidas da fase de grupos ao mata-mata.</p>
+      </div>
+      <div class="video-wrap reveal">
+        <iframe src="https://www.youtube.com/embed/ig8rUCd3gPQ" title="Hino oficial da UEFA Champions League" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTÍCIAS / CURIOSIDADES -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Curiosidades</span>
+          <h2>Você sabia?</h2>
+        </div>
+      </div>
+      <div class="grid grid--3">
+        <div class="news-card reveal">
+          <span class="tag">Recorde</span>
+          <h3>O Maracanã já recebeu mais de 170 mil pessoas</h3>
+          <p>Na final da Copa do Mundo de 1950, o estádio carioca teve um dos maiores públicos já registrados em um jogo de futebol.</p>
+        </div>
+        <div class="news-card reveal">
+          <span class="tag">Tradição</span>
+          <h3>O El Clásico é disputado desde 1902</h3>
+          <p>Real Madrid e Barcelona já se enfrentaram centenas de vezes, num dos maiores clássicos do esporte mundial.</p>
+        </div>
+        <div class="news-card reveal">
+          <span class="tag">Curiosidade</span>
+          <h3>A "orelhuda" tem esse apelido pelo formato</h3>
+          <p>O troféu da Champions League é chamado assim por causa de suas duas grandes alças, uma de cada lado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" fill="#0A1128" stroke="#E8B33D" stroke-width="2"/>
+            <text x="24" y="29" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="14" fill="#E8B33D">XI</text>
+          </svg>
+          <span class="brand__name">ARENA <em>XI</em></span>
+        </div>
+        <p>Seu ponto de encontro para ligas, clubes e histórias do futebol mundial.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="ligas.html">Ligas</a></li>
+          <li><a href="times.html">Times</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ligas</h4>
+        <ul>
+          <li><a href="ligas.html#premier-league">Premier League</a></li>
+          <li><a href="ligas.html#laliga">La Liga</a></li>
+          <li><a href="ligas.html#brasileirao">Brasileirão</a></li>
+          <li><a href="ligas.html#champions">Champions League</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes sociais</h4>
+        <div class="social">
+          <a href="contato.html" aria-label="Instagram">IG</a>
+          <a href="contato.html" aria-label="X / Twitter">X</a>
+          <a href="contato.html" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ARENA XI. Projeto demonstrativo — dados de fãs, para fãs.</span>
+      <span>Feito para desktop, tablet e celular.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/crest-fallback.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
